@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Caves of Steel - Path to Ground</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      *, *:before, *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      html, body {
+        min-height: 100vh;
+      }
+      body {
+        background: #000;
+        padding: 0px;
+        margin: 0px;
+        font: normal 16px/1.5 sans-serif;
+        color: #fff;
+      }
+      a, a:visited {
+        text-decoration: underline;
+        color: #a00;
+      }
+      .background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000 url("path-to-ground.jpg") 50% 50% no-repeat;
+        background-size: cover;
+        z-index: 1;
+      }
+      .content {
+        position: absolute;
+        width: 100%;
+        min-height: 100vh;
+        padding: 10vw;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+      }
+      .columns {
+        display: flex;
+      }
+      .column {
+        width: 45%;
+      }
+      .column-2 {
+        margin-left: 10%;
+      }
+      .column .image img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+      table.links {
+        width: 100%;
+        border-spacing: 1px;
+        border-collapse: separate;
+      }
+      table.links td {
+        background: #fff;
+        padding: 10px 20px;
+        text-align: center;
+        width: 50%;
+        height: 70px;
+      }
+      table.links img {
+        display: block;
+        margin: 0px auto;
+      }
+      .logo {
+        margin-bottom: 80px;
+      }
+      .logo img {
+        max-width: 500px;
+        height: auto;
+        display: block;
+        margin: 0px auto;
+      }
+
+      @media screen and (max-width: 900px) {
+        .columns {
+          flex-direction: column;
+        }
+        .column {
+          width: 100%;
+          margin-bottom: 40px;
+        }
+        .column-2 {
+          margin-left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="content">
+      <div class="logo">
+        <img src="coslogo.svg" alt="Caves of Steel">
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="image">
+            <img src="path-to-ground.jpg" alt="Path to Ground" width="640" height="640">
+          </div>
+        </div>
+        <div class="column column-2">
+          <table class="links">
+            <tr>
+              <td>
+                <img src="tiger.png" alt="Platebutikken Tiger" width="150" height="50">
+              </td>
+              <td>
+                <a href="https://www.tigernet.no/item/154598">Preorder now</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="bigdipper.png" alt="Big Dipper" width="150" height="50">
+              </td>
+              <td>
+                <a href="https://bigdipper.no/vinyl/pop_rock/lp/caves-of-steel-path-to-ground-lp-tvrlp007-p0000066694">Preorder now</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="bandcamp.png" alt="Bandcamp" width="163" height="25">
+              </td>
+              <td>
+                <a href="https://cavesofsteel.bandcamp.com/album/path-to-ground">Preorder now</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
