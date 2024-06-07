@@ -4,17 +4,17 @@ metadata:
   name: web-app-deployment
   namespace: cavesofsteel
   labels:
-    app: web-app
+    app.kubernetes.io/name: web-app
 spec:
   replicas: 2
   minReadySeconds: 10
   selector:
     matchLabels:
-      app: web-app
+      app.kubernetes.io/name: web-app
   template:
     metadata:
       labels:
-        app: web-app
+        app.kubernetes.io/name: web-app
     spec:
       imagePullSecrets:
       - name: regcred
